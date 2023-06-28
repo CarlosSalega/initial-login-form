@@ -1,24 +1,26 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@chakra-ui/icons': ^2.0.19
   '@chakra-ui/react': ^2.7.1
   '@emotion/react': ^11.11.1
   '@emotion/styled': ^11.11.0
-  '@types/react': ^18.0.37
-  '@types/react-dom': ^18.0.11
-  '@typescript-eslint/eslint-plugin': ^5.59.0
-  '@typescript-eslint/parser': ^5.59.0
-  '@vitejs/plugin-react-swc': ^3.0.0
-  eslint: ^8.38.0
+  '@types/react': ^18.2.14
+  '@types/react-dom': ^18.2.6
+  '@typescript-eslint/eslint-plugin': ^5.60.1
+  '@typescript-eslint/parser': ^5.60.1
+  '@vitejs/plugin-react-swc': ^3.3.2
+  eslint: ^8.43.0
   eslint-plugin-react-hooks: ^4.6.0
-  eslint-plugin-react-refresh: ^0.3.4
+  eslint-plugin-react-refresh: ^0.3.5
   framer-motion: ^10.12.17
   react: ^18.2.0
   react-dom: ^18.2.0
-  typescript: ^5.0.2
+  typescript: ^5.1.5
   vite: ^4.3.9
 
 dependencies:
+  '@chakra-ui/icons': 2.0.19_react@18.2.0
   '@chakra-ui/react': 2.7.1_zovsvzknvpf7lwsjwn3gup4sxa
   '@emotion/react': 11.11.1_i73ekzlbntu7jol6ph2fvy4mga
   '@emotion/styled': 11.11.0_rowjtfdjat7gur3v4vqpuckrf4
@@ -39,6 +41,11 @@ devDependencies:
   vite: 4.3.9
 
 packages:
+
+  /@aashutoshrathi/word-wrap/1.2.6:
+    resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
+    engines: {node: '>=0.10.0'}
+    dev: true
 
   /@babel/code-frame/7.22.5:
     resolution: {integrity: sha512-Xmwn266vad+6DAqEB2A6V/CcZVp62BbwVmcOJc2RPuwih1kw02TjQvWVWlcKGbBPd+8/0V5DEkOcizRGYsspYQ==}
@@ -350,6 +357,26 @@ packages:
     dependencies:
       '@chakra-ui/shared-utils': 2.0.5
       '@chakra-ui/system': 2.5.8_5uavjbr3lmuxf4a3t6dmknaeea
+      react: 18.2.0
+    dev: false
+
+  /@chakra-ui/icon/3.0.16_react@18.2.0:
+    resolution: {integrity: sha512-RpA1X5Ptz8Mt39HSyEIW1wxAz2AXyf9H0JJ5HVx/dBdMZaGMDJ0HyyPBVci0m4RCoJuyG1HHG/DXJaVfUTVAeg==}
+    peerDependencies:
+      '@chakra-ui/system': '>=2.0.0'
+      react: '>=18'
+    dependencies:
+      '@chakra-ui/shared-utils': 2.0.5
+      react: 18.2.0
+    dev: false
+
+  /@chakra-ui/icons/2.0.19_react@18.2.0:
+    resolution: {integrity: sha512-0A6U1ZBZhLIxh3QgdjuvIEhAZi3B9v8g6Qvlfa3mu6vSnXQn2CHBZXmJwxpXxO40NK/2gj/gKXrLeUaFR6H/Qw==}
+    peerDependencies:
+      '@chakra-ui/system': '>=2.0.0'
+      react: '>=18'
+    dependencies:
+      '@chakra-ui/icon': 3.0.16_react@18.2.0
       react: 18.2.0
     dev: false
 
@@ -2222,7 +2249,7 @@ packages:
       lodash.merge: 4.6.2
       minimatch: 3.1.2
       natural-compare: 1.4.0
-      optionator: 0.9.1
+      optionator: 0.9.3
       strip-ansi: 6.0.1
       strip-json-comments: 3.1.1
       text-table: 0.2.0
@@ -2644,16 +2671,16 @@ packages:
       wrappy: 1.0.2
     dev: true
 
-  /optionator/0.9.1:
-    resolution: {integrity: sha512-74RlY5FCnhq4jRxVUPKDaRwrVNXMqsGsiW6AJw4XK8hmtm10wC0ypZBLw5IIp85NZMr91+qd1RvvENwg7jjRFw==}
+  /optionator/0.9.3:
+    resolution: {integrity: sha512-JjCoypp+jKn1ttEFExxhetCKeJt9zhAgAve5FXHixTvFDW/5aEktX9bufBKLRRMdU7bNtpLfcGu94B3cdEJgjg==}
     engines: {node: '>= 0.8.0'}
     dependencies:
+      '@aashutoshrathi/word-wrap': 1.2.6
       deep-is: 0.1.4
       fast-levenshtein: 2.0.6
       levn: 0.4.1
       prelude-ls: 1.2.1
       type-check: 0.4.0
-      word-wrap: 1.2.3
     dev: true
 
   /p-limit/3.1.0:
@@ -3112,11 +3139,6 @@ packages:
     hasBin: true
     dependencies:
       isexe: 2.0.0
-    dev: true
-
-  /word-wrap/1.2.3:
-    resolution: {integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==}
-    engines: {node: '>=0.10.0'}
     dev: true
 
   /wrappy/1.0.2:
